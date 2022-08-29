@@ -1,6 +1,7 @@
 {
   "name": "store",
   "version": "0.1.0",
+  "homepage": "https://mohamedbediwe.github.io/comfy-sloth-store",
   "private": true,
   "dependencies": {
     "@auth0/auth0-react": "^1.2.0",
@@ -22,6 +23,8 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "netlify dev",
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -47,6 +50,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^4.0.0",
     "netlify-cli": "^9.13.5"
   }
 }
